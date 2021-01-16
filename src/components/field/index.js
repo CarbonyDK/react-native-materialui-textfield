@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import React, { PureComponent } from 'react';
 import {
   View,
@@ -50,52 +49,6 @@ export default class TextField extends PureComponent {
     disabled: false,
     disabledLineType: 'dotted',
     disabledLineWidth: 1,
-  };
-
-  static propTypes = {
-    ...TextInput.propTypes,
-
-    animationDuration: PropTypes.number,
-
-    fontSize: PropTypes.number,
-    titleFontSize: PropTypes.number,
-    labelFontSize: PropTypes.number,
-    labelHeight: PropTypes.number,
-    labelPadding: PropTypes.number,
-    inputContainerPadding: PropTypes.number,
-
-    labelTextStyle: Text.propTypes.style,
-    titleTextStyle: Text.propTypes.style,
-    affixTextStyle: Text.propTypes.style,
-
-    tintColor: PropTypes.string,
-    textColor: PropTypes.string,
-    baseColor: PropTypes.string,
-
-    label: PropTypes.string.isRequired,
-    title: PropTypes.string,
-
-    characterRestriction: PropTypes.number,
-
-    error: PropTypes.string,
-    errorColor: PropTypes.string,
-
-    lineWidth: PropTypes.number,
-    activeLineWidth: PropTypes.number,
-
-    disabled: PropTypes.bool,
-    disabledLineType: Line.propTypes.type,
-    disabledLineWidth: PropTypes.number,
-
-    renderAccessory: PropTypes.func,
-
-    prefix: PropTypes.string,
-    suffix: PropTypes.string,
-
-    containerStyle: (ViewPropTypes || View.propTypes).style,
-    inputContainerStyle: (ViewPropTypes || View.propTypes).style,
-
-    helpersNumberOfLines: PropTypes.number,
   };
 
   constructor(props) {
